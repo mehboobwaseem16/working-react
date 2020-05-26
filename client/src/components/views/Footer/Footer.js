@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 import React from 'react'
 import {Icon} from 'antd';
 
@@ -8,7 +10,7 @@ function Footer() {
             flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', fontSize:'1rem'
         }}>
-           <p> Happy Coding  <Icon type="smile" /></p>
+           <p> Developed by Waseem Mehboob</p>
         </div>
     )
 }

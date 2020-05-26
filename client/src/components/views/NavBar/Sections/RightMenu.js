@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Menu, Icon, Badge } from 'antd';
@@ -33,7 +35,9 @@ function RightMenu(props) {
   } else {
     return (
       <Menu mode={props.mode}>
-
+    <Menu.Item key="mail">
+      <a href="/">Home</a>
+    </Menu.Item>
         <Menu.Item key="history">
           <a href="/history">History</a>
         </Menu.Item>

@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 import React, { useState } from 'react'
 import { Typography, Button, Form, message, Input, Icon } from 'antd';
 import FileUpload from '../../utils/FileUpload'
@@ -6,14 +8,14 @@ import Axios from 'axios';
 const { Title } = Typography;
 const { TextArea } = Input;
 
-const Continents = [
-    { key: 1, value: "Africa" },
-    { key: 2, value: "Europe" },
-    { key: 3, value: "Asia" },
-    { key: 4, value: "North America" },
-    { key: 5, value: "South America" },
-    { key: 6, value: "Australia" },
-    { key: 7, value: "Antarctica" }
+const IRECities = [
+    { key: 1, value: "Dublin" },
+    { key: 2, value: "Cork" },
+    { key: 3, value: "Limerick" },
+    { key: 4, value: "Sligo" },
+    { key: 5, value: "Kilkenny" },
+    { key: 6, value: "Port Loius" },
+    { key: 7, value: "Galway" }
 ]
 
 function UploadProductPage(props) {
@@ -38,7 +40,7 @@ function UploadProductPage(props) {
         setPriceValue(event.currentTarget.value)
     }
 
-    const onContinentsSelectChange = (event) => {
+    const onIRECitiesSelectChange = (event) => {
         setContinentValue(event.currentTarget.value)
     }
 
@@ -60,7 +62,7 @@ function UploadProductPage(props) {
             description: DescriptionValue,
             price: PriceValue,
             images: Images,
-            continents: ContinentValue,
+            IRECities: ContinentValue,
         }
 
         Axios.post('/api/product/uploadProduct', variables)
@@ -110,8 +112,8 @@ function UploadProductPage(props) {
                     type="number"
                 />
                 <br /><br />
-                <select onChange={onContinentsSelectChange} value={ContinentValue}>
-                    {Continents.map(item => (
+                <select onChange={onIRECitiesSelectChange} value={ContinentValue}>
+                    {IRECities.map(item => (
                         <option key={item.key} value={item.key}>{item.value} </option>
                     ))}
                 </select>

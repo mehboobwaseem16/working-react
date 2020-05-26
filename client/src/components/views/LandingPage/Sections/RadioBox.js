@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 import React, { useState } from 'react'
 import { Collapse, Radio } from 'antd';
 const { Panel } = Collapse;
@@ -21,7 +23,7 @@ function RadioBox(props) {
     return (
         <div>
             <Collapse defaultActiveKey={['0']}>
-                <Panel header="price" key="1">
+                <Panel header="Price Range" key="1">
                     <Radio.Group onChange={handleChange} value={Value}>
 
                         {renderRadioBox()}

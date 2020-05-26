@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 const { User } = require('../models/User');
 
 let auth = (req, res, next) => {

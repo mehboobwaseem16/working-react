@@ -1,3 +1,5 @@
+// Author:Waseem Mehboob
+// ID: 18072
 import React, { useEffect, useState } from 'react'
 import Axios from 'axios';
 import { Icon, Col, Card, Row } from 'antd';
@@ -144,7 +146,7 @@ function LandingPage() {
     return (
         <div style={{ width: '75%', margin: '3rem auto' }}>
             <div style={{ textAlign: 'center' }}>
-                <h2>  Let's Travel Anywhere  <Icon type="rocket" />  </h2>
+                <h2>  Let's Explore Ireland  <Icon type="rocket" />  </h2>
             </div>
 
 
