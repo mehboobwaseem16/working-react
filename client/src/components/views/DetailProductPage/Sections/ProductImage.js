@@ -10,8 +10,8 @@ function ProductImage(props) {
 
             props.detail.images && props.detail.images.map(item => {
                 images.push({
-                    original: `https://localhost:5000/${item}`,
-                    thumbnail: `https://localhost:5000/${item}`
+                    original: `${process.env.PUBLIC_URL}/${item}`,
+                    thumbnail: `${process.env.PUBLIC_URL}/${item}`
                 })
             })
             setImages(images)
