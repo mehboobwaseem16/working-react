@@ -65,8 +65,10 @@ function FileUpload(props) {
 
                 {Images.map((image, index) => (
                     <div onClick={() => onDelete(image)}>
-                        <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`https://5000-da0ed52e-2525-4905-b79e-9aed4da137ed.ws-eu01.gitpod.io/${image}`} alt={`productImg-${index}`} />
+                        <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`${process.env.PUBLIC_URL}/uploads/${image}`} alt={`productImg-${index}`} />
+                            
                     </div>
+                    
                 ))}
 
 

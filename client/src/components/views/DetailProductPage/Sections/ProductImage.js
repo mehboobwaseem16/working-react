@@ -10,8 +10,8 @@ function ProductImage(props) {
 
             props.detail.images && props.detail.images.map(item => {
                 images.push({
-                    original: `https://5000-da0ed52e-2525-4905-b79e-9aed4da137ed.ws-eu01.gitpod.io/${item}`,
-                    thumbnail: `https://5000-da0ed52e-2525-4905-b79e-9aed4da137ed.ws-eu01.gitpod.io/${item}`
+                    original: `https://localhost:5000/${item}`,
+                    thumbnail: `https://localhost:5000/${item}`
                 })
             })
             setImages(images)
